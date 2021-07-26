@@ -6,7 +6,7 @@ public interface IProducto {
 
     int getPeso();
 
-    int getVolume();
+    int getVolumen();
 
     String getCategoria();
 
