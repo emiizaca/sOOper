@@ -1,6 +1,7 @@
 package sooper.productos;
 
 import sooper.IProducto;
+import sooper.emuns.Categoria;
 
 public class Alimentacion extends Producto{
 
@@ -9,13 +10,12 @@ public class Alimentacion extends Producto{
     }
 
     @Override
-    public String getCategoria() {
-        return "Alimentacion";
+    public Categoria getCategoria() {
+        return Categoria.ALIMENTACION;
     }
 
     @Override
     public boolean esCompatible(IProducto p) {
-        //TODO
-        return false;
+        return Categoria.ALIMENTACION.equals(p.getCategoria());
     }
 }

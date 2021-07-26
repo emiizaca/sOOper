@@ -1,5 +1,7 @@
 package sooper;
 
+import sooper.emuns.TipoContenedor;
+
 import java.awt.image.ImageProducer;
 import java.util.Set;
 
@@ -17,7 +19,7 @@ public interface IContenedor {
 
     Set<IProducto> getProductos();
 
-    String getTipo();
+    TipoContenedor getTipo();
 
     boolean meter(IProducto producto);
 
